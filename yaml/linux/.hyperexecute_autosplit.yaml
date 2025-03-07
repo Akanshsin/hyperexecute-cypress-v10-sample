@@ -7,8 +7,8 @@ concurrency: 4
 
 cypress: true
 cypressOps:
-  Build: "Hyperexecute Cypress Sample Build"
-  Tags: ["HYP-Cypress", "Linux", "Autosplit", "Accessibility"]
+  Build: "Hyperexecute Cypress Sample Build Project Test"
+  Tags: ["HYP-Cypress", "Linux", "Autosplit", "Accessibility", "Workflow"]
   BuildTags: ["HYP-Cypress-v10"]
 
 pre:
@@ -17,7 +17,7 @@ pre:
   - npm i lambdatest-cypress-cli
 
 testDiscovery:
-  mode: static
+  mode: dynamic
   type: raw
   command: ls cypress/e2e/2-advanced-examples
 
